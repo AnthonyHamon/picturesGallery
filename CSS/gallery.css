@@ -1,0 +1,227 @@
+.galleries {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    min-height: 79.8vh;
+}
+
+.inputCtn {
+    display: flex;
+    flex-direction: column;
+    border: solid 2px;
+    border-radius: 10px;
+}
+
+.inputCtn input {
+    width: 600px;
+    height: 50px;
+    border: transparent;
+    border-radius: 10px;
+    padding: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    outline: none;
+    background-color: #f8f8f8;
+}
+
+.inputCtn button {
+    border: transparent;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: #f8f8f8;
+    padding: 8px;
+    font-weight: 500;
+}
+
+.inputCtn button:hover {
+    background-color: grey;
+    border-radius: 0 0 7px 7px;
+    font-weight: 700;
+}
+
+.thumbnailsCtn {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 48px 24px;
+    padding: 24px;
+}
+
+.infoText {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 500;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    margin-top: 24px;
+
+}
+
+.thumbnail {
+    display: flex;
+    flex-direction: column;
+    width: 305px;
+    height: 305px;
+    margin-top: 12px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.thumbnailTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(55, 55, 55);
+    color: white;
+}
+
+.thumbnailTitle span {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px;
+}
+
+.thumbnailTitleImgCtn {
+    margin-right: 12px;
+    margin-top: 2px;
+}
+
+.thumbnailTitle img {
+    width: 20px;
+    height: 20px;
+    filter: invert(94%) sepia(100%) saturate(24%) hue-rotate(352deg) brightness(106%) contrast(105%);
+
+}
+
+.thumbnailImgs:hover {
+    filter: drop-shadow(2px 4px 6px black);
+    width: 315px;
+    height: 315px;
+}
+
+.thumbnailImgs img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    vertical-align: unset;
+}
+
+.thumbnailImgs img:hover {
+    transition: all 225ms ease-in-out;
+    width: 155px;
+    height: 155px;
+}
+
+
+/* ------------------  CSS for Pictures Page ----------------- */
+
+.asides {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 7.5vw;
+}
+
+.asides img {
+    height: 25vh;
+    width: 5vw;
+    filter: opacity(0.2);
+}
+
+.asides img:hover{
+    transition: all 225ms ease-in-out;
+    filter: opacity(1);
+}
+
+#backArrow{
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    top: 18px;
+    left: 36px;
+    filter: opacity(0.2);
+}
+
+#backArrow:hover{
+    transition: all 225ms ease-in-out;
+    filter: opacity(1);
+}
+
+.imageBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 12px 0px 12px 0px;
+    gap: 10px;
+}
+
+.imageBox img {
+    width: 235px;
+    height: 240px;
+    object-fit: cover;
+}
+
+.imageBox img:hover {
+    filter: drop-shadow(2px 4px 6px black);
+}
+
+/* ------------------  CSS for opened Picture ----------------- */
+
+
+.noOpacity {
+    opacity: 0;
+    transition: all 500ms ease-in;
+}
+
+.counter {
+    color: white;
+}
+
+.openedImage {
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 85vw;
+    height: 100vh;
+}
+
+.openedImage img{
+    padding: 18px;
+    height: 90vh;
+    width: 90vw;
+    object-fit: contain;
+    transition: all 1000ms ease-in-out;
+}
+
+.openedPicture{
+    display: flex;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.imgBg{
+    display: flex;
+}
+
+.opacityOut{
+    transition: all 1000ms ease-in-out;
+    opacity: 1;
+}
+
+.d-none{
+    display: none;
+}

@@ -1,0 +1,189 @@
+/* homePage media query */
+
+@media (max-width: 1300px ){
+    .cube img {
+        width: 250px;
+        height: 250px;
+    }
+
+    :root{
+        --cube-width: 250px;
+        --translateZ: 200px;
+    }
+
+    .asides img{
+        width: 6vw;
+    }
+}
+
+@media (max-width: 1000px ){
+    .cube img {
+        width: 200px;
+        height: 200px;
+    }
+
+    :root{
+        --cube-width: 200px;
+        --translateZ: 150px;
+    }
+
+    .imageBox img {
+        width: 200px;
+        height: 205px;
+    }
+
+    .asides img {
+        width: 7vw;
+    }
+}
+
+@media (max-width: 850px ){
+   .mainContainer{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+   }
+
+   .callToAction{
+    margin-left: unset;
+   }
+
+   .callToAction h1{
+    text-align: center;
+   }
+
+   .imageBox img {
+    width: 155px;
+    height: 160px;
+}
+
+.asides img {
+    width: 8vw;
+    height: 20vh;
+}
+}
+
+@media (max-width: 780px ){
+    .imageBox img {
+        width: 140px;
+        height: 155px;
+    }
+}
+
+@media (max-width: 700px ){
+    .callToAction a{
+        text-align: center;
+    }
+
+    .navbar_section{
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    .asides img {
+        height: 15vh;
+    }
+}
+
+@media (max-width: 650px){
+    .inputCtn input{
+        width: 500px;
+    }
+}
+
+@media (max-width: 550px){
+    .inputCtn input{
+        width: 350px;
+    }
+
+    .thumbnail{
+        width: 205px;
+        height: 205px;
+    }
+
+    .thumbnailImgs img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .thumbnailImgs:hover{
+        width: 215px;
+        height: 215px;
+    }
+
+    .thumbnailImgs img:hover{
+        width: 105px;
+        height: 105px;
+    }
+
+    .asides img {
+        width: 10vw;
+    }
+}
+
+@media (max-width: 450px ){
+    .navbar_section{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .cube img {
+        width: 150px;
+        height: 150px;
+    }
+
+    :root{
+        --cube-width: 150px;
+        --translateZ: 100px;
+    }
+
+    .mainContainer{
+        padding-bottom: 100px;
+    }
+
+    .myGalleryTitle h2{
+        font-size: 1.4rem;
+    }
+
+    .myGalleryTitle div{
+        font-size: 14px;
+    }
+
+    .navLinks{
+        gap: 8px;
+    }
+
+    .pageTitleCtn{
+        font-size: 14px;
+    }
+    
+    .callToAction h1{
+        padding: 0 20px;
+       }
+
+    .footer{
+        font-size: 14px;
+    }
+
+    .footerNavLinks{
+        gap: 4px;
+    }
+
+    .inputCtn input{
+        width: 250px;
+    }
+
+    .imageBox img {
+        width: 105px;
+        height: 110px;
+    }
+
+    .asides img {
+        height: 10vh;
+        width: 11vw;
+    }
+}
+
+
+
